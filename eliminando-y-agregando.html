@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Mostrar Elementos en la posicion que desee</title>
+</head>
+<body>
+<ol id="lista">
+    <li id="primero">Lorem Ipsum</li>
+    <li>Prueba, Prueba, Prueba</li>
+</ol>
+<script>
+    var elemento = document.createElement("li"),
+            contenido = document.createTextNode("Nuevo Texto");
+    elemento.appendChild(contenido);
+
+    //No mostrar
+    /*var padre = document.getElementsByTagName("li")[0].parentNode,
+            referencia = document.getElementsByTagName("li")[0];
+    padre.removeChild(referencia);*/
+
+
+
+    //Reemplazar un texto
+    /*var padre = document.getElementsByTagName("li")[0].parentNode,
+            referencia = document.getElementsByTagName("li")[0];
+        padre.replaceChild(elemento, referencia);*/
+
+    //Esto interpreta lineas HTML textContent solo ingresa texto
+    //primerElemento.innerHTML = "Hola Mundo <i>Rafael</i>";
+</script>
+</body>
+</html>
