@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Mostrar Elementos en la posicion que desee</title>
+</head>
+<body>
+	<ol id="lista">
+		<li>Lorem Ipsum</li>
+		<li>Prueba, Prueba, Prueba</li>
+	</ol>
+	<script>
+		var elemento = document.createElement("li"),
+			contenido = document.createTextNode("Nuevo Texto");
+		elemento.appendChild(contenido);
+
+		// Una forma de imprimir 1-
+		//document.body.appendChild(contenido);
+
+		// Una forma de imprimir 2- (En la lista)
+		/*var padre = document.getElementsByTagName("li")[0].parentNode;
+		var hijo = document.getElementsByTagName("li")[0];
+		padre.insertBefore(elemento, hijo);*/
+
+		// Una forma de imprimir 3-
+		/*var padre = document.getElementsByTagName("li")[0].parentNode;
+		padre.insertBefore(elemento, document.getElementsByTagName("li")[0]);*/
+
+		// Una forma de imprimir 4-
+		/*var padre = document.getElementsByTagName("li")[0].parentNode;
+		padre.appendChild(elemento);*/
+	</script>
+</body>
+</html>
